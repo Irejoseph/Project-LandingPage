@@ -25,7 +25,7 @@ function renderLeads() {
 }
 
 
-const recipient = "Joseph"
+/* const recipient = "Joseph"
 const sender = "Jimmy"
 
 const email = `
@@ -36,4 +36,4 @@ How is it going?
 Cheers ${sender}
 `
 
-console.log(email)
+console.log(email) */
