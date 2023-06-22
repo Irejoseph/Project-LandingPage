@@ -3,13 +3,12 @@
     <head>
         <title></title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Tut.css">
     </head>
     <body>
         <form action="">
             <h1>Registration Form</h1>
-            <p>Pls complete this form to complete your registration with us.</p>
+            <p>Do fill this form to complete your registration with us.</p>
             <label for="fn"><br>First Name:</label>
             <input type="text" placeholder="First Name" name="fn" id="fn" required>
 
@@ -19,10 +18,10 @@
             <label for="email"><br>Email:</label>
             <input type="email" placeholder="Email" name="email" id="email">
 
-            <label for="phone">Phone Number:</label>
+            <label for="phone"><br>Phone Number:</label>
             <input type="tel" placeholder="Enter your phone number" id="phone" name="phone">
 
-            <label for="age">Age:</label>
+            <label for="age"><br>Age:</label>
             <input type="number" placeholder="Enter your age" id="age" name="age" required>
 
             <label for="psw"><br>Password:</label>
@@ -30,6 +29,8 @@
 
             <label for="cpsw"><br>Confirm Password:</label>
             <input type="password" placeholder="Confirm your password" name="cpsw" id="cpsw" required>
+
+            <br><button id="rgst" onclick="rgst">Register</button>
         </form>
         <script src="Tut.js"></script>
     </body>
