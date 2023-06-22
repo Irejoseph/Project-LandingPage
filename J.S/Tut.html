@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Tut.css">
     </head>
     <body>
-        <input type="text" id="input-el">
-        <button id="input-btn">SAVE INPUT</button>
-        <ul id="ul-el">www.awesomeleads.com</ul>
-        
+        <form action="">
+            <h1>Registration Form</h1>
+            <p>Pls complete this form to complete your registration with us.</p>
+            <label for="fn"><br>First Name:</label>
+            <input type="text" placeholder="First Name" name="fn" id="fn" required>
+
+            <label for="ln"><br>Last Name:</label>
+            <input type="text" placeholder="Last Name" name="ln" id="ln" required>
+
+            <label for="email"><br>Email:</label>
+            <input type="email" placeholder="Email" name="email" id="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" placeholder="Enter your phone number" id="phone" name="phone">
+
+            <label for="age">Age:</label>
+            <input type="number" placeholder="Enter your age" id="age" name="age" required>
+
+            <label for="psw"><br>Password:</label>
+            <input type="password" placeholder="Enter your password" name="psw" id="psw" required>
+
+            <label for="cpsw"><br>Confirm Password:</label>
+            <input type="password" placeholder="Confirm your password" name="cpsw" id="cpsw" required>
+        </form>
         <script src="Tut.js"></script>
     </body>
 </html>
