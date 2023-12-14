@@ -1,3 +1,22 @@
-input {
-    margin: 10px;
+
+
+
+
+
+button {
+    border: none;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    margin-bottom: 7px;
+    border-radius: 7px;
+}
+
+#increment-btn{
+    background-color: darkcyan;
+}
+
+#save-btn{
+    background-color: rebeccapurple;
 }
