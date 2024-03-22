@@ -6,7 +6,7 @@ import Hi from "./components/Hi"
 function App() {
   return (
   <div className="App">
-    <Condcomp />
+    <Fruits />
   </div>
   ) 
 }
