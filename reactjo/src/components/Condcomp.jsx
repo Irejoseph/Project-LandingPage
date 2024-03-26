@@ -1,5 +1,6 @@
 import Code from "./Code"
-import Getout from "../Getout"
+import Getout from "./Getout"
+
 
 export default function Condcomp() {
     let messageOne = <Code />
