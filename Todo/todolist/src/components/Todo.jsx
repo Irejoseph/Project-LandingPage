@@ -1,5 +1,6 @@
 import { useState } from "react"
 import TodoItem from "./Todoitem"
+import styles from "./addbtn.module.css"
 
 export default function Todo(){
     const [todo, setTodo] = useState("")
@@ -16,11 +17,11 @@ export default function Todo(){
             onChange={(e)=>setTodo(e.target.value)} 
             value={todo}
             type="text" />
-            <button type="submit">Add</button>
+            <button className={styles.btn} type="submit">Add</button>
         </form>
         {todos.map((item)=>(
-            <TodoItem item={item} />
-        ))}
+            <TodoItem key={item} item={item} />
+        ))} 
     </div>
     )
 }
