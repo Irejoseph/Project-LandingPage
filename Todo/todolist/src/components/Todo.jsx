@@ -1,4 +1,5 @@
 import Form from "./Form"
+import { useState } from "react"
 import Todolist from "./Todolist"
 
 
@@ -7,7 +8,7 @@ export default function Todo(){
     return (
     <div>
         <Form todos={todos} setTodos={setTodos}/>
-         <Todolist />
+         <Todolist  todos={todos}/>
     </div>
     )
 }

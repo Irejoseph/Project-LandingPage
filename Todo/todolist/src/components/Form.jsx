@@ -1,7 +1,7 @@
 import { useState } from "react"
-import styles from "./todostyles.module.css"
+import styles from "./form.module.css"
 
-export default function Form(todos, setTodos){
+export default function Form({todos, setTodos}){
     const [todo, setTodo] = useState("")
     
     function handleSubmit(e){
@@ -11,11 +11,14 @@ export default function Form(todos, setTodos){
     }
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-            <input 
+            <form className={styles.form} onSubmit={handleSubmit}>
+            <input
+            className={styles.input} 
             onChange={(e)=>setTodo(e.target.value)} 
             value={todo}
-            type="text" />
+            type="text" 
+            placeholder="Write your plans here..."
+            />
             <button className={styles.btn} type="submit">Add</button>
         </form>
         </div>
