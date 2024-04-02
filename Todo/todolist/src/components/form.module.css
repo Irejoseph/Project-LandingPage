@@ -1,0 +1,38 @@
+.form{
+    background-color: whitesmoke;
+    padding: 20PX;
+    border-radius: 4PX;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0 5px 7px rgb(0, 0, 0);
+    height: 70px;
+}
+
+.input{
+    display: block;
+    width: 100%;
+    border: none;
+    height: 25px;
+    color: black;
+    font-size: 15px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.btn{
+    color: indigo;
+    background-color: lightpink;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+    cursor: all-scroll;
+}
+
+.inputCont{
+    display: flex;
+}

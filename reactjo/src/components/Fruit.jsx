@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export default function Fruit({name, price, emoji, soldout}) {
   return  (
     <>
@@ -8,5 +9,12 @@ export default function Fruit({name, price, emoji, soldout}) {
         </li>
       
     </>
+=======
+export default function Fruit({name, price}) {
+  return  (
+  <li>
+    {name} - {price}
+  </li>
+>>>>>>> todolist
   )
 }
