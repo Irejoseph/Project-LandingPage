@@ -1,4 +1,5 @@
 export default function Fooditem({ food }){
+    
     return (
     <div>
         <img src={food.image} alt="" />
