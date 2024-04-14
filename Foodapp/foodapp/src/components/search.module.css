@@ -1,0 +1,15 @@
+.searchContainer{
+    margin: 30px auto;
+    width: 100px;
+    height: 20px;
+    position: relative;
+}
+
+.input{
+    border: none;
+    border-radius: 3px;
+    border-bottom: 2px double green;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}

@@ -1,7 +1,8 @@
 import { useState } from "react"
 import Search from "./components/Search"
-import Foodlist from "./components/Foodlist"
 import Nav from "./components/Nav"
+import FoodList from "./components/Foodlist"
+import "./App.css"
 
 function App(){
   const [foodData, setFoodData] = useState([])
@@ -9,7 +10,7 @@ function App(){
   <div className="App">
     <Nav />
     <Search foodData={foodData} setFoodData={setFoodData}/>
-    <Foodlist foodData={foodData} />
+    <FoodList foodData={foodData}/>
   </div>
   )
 }
