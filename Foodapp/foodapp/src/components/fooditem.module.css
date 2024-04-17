@@ -15,5 +15,26 @@
 }
 
 .itemBtn{
+    background-color: crimson;
+    color: white;
     cursor: pointer;
+    display: flex;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.btnCont{
+    margin: 25px 0 15px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.itemTitle{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.itemName{
+    font-size: 22px;
 }
