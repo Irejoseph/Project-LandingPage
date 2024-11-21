@@ -10,3 +10,8 @@
     margin: 13px;
     padding: 2 auto;
 }
+
+.header {
+    margin-left: 10px;
+    font-weight: bold;
+}
