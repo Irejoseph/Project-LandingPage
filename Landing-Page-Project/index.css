@@ -1,7 +1,12 @@
 /* This file is intentionally left blank. */
 
-img {
-    width: 390px;
-    height: 400px;
-    object-fit: cover;
+
+
+
+
+
+.feature-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: .75rem;
 }
