@@ -1,0 +1,52 @@
+
+.heroh1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+.herogrid {
+    margin-top: 10px;
+}
+
+.btn-hero-custom1 {
+    background-color: #98FB98 !important; /* !important overides the color in the primary button whilst keeping its other features. */
+    border-color: #98FB98 !important; 
+    color: #000 !important;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-hero-custom1:hover {
+    background-color: #98FB98 !important; /* !important overides the color in the primary button whilst keeping its other features. */
+    border-color: #98FB98 !important; 
+    color: #000 !important;
+    transform: scale(1.05); /* Scale up the button on hover */ 
+}
+
+.btn-hero-custom2 {
+    background-color: #8C92AC !important; /* !important overides the color in the primary button whilst keeping its other features. */
+    border-color: #8C92AC !important; 
+    color: #fff !important;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease 
+}
+
+.btn-hero-custom2:hover {
+    background-color: #8C92AC !important; /* !important overides the color in the primary button whilst keeping its other features. */
+    border-color: #8C92AC !important; 
+    color: #fff !important;
+    transform: scale(1.05); /* Scale up the button on hover */ 
+}
+
+.carousel-item {
+    height: 75vh;
+}
+
+.car1p {
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    font-size: 18px;
+}
+
+.feature-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: .75rem;
+}
