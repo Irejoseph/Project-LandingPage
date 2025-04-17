@@ -91,17 +91,24 @@ header img {
 
 /* styling for how it works */
 
+.hiw-title {
+    margin-top: 12px;
+}
+
 .fc-img2 {
     align-items: center;
     margin-left: 25px;
+    border-radius: 3px;
 }
 
 .fc-img3 {
     margin-left: 25px;
+    border-radius: 3px;
 }
 
 
 
+/* Offers styling */
 
 .card-title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -109,3 +116,19 @@ header img {
 }
 
 
+/* Footer styling */
+
+footer {
+    background-color: #00F0FF;
+    color: black;
+    padding: 40px 0 0 0;
+}
+
+.foot-top {
+    margin-left: 50px;
+}
+
+.foot-bot {
+    margin: 30px 30px 0 30px;
+    padding-top: 5px;
+}
