@@ -1,4 +1,40 @@
 
+/* Header related styling */
+
+header {
+    background-color: #ADEBB3;
+}
+
+header a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+header span {
+    color: white;
+}
+
+header img {
+    border-radius: 7px;
+    margin-right: 20px;
+}
+
+.nav {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+.nav-item:hover {
+    transform: scale(1.2);
+    transition: transform 0.3 ease;
+}
+
+.nav-link {
+    margin: 0;
+}
+
+
+/* Styling the hero */
 
 .heroh1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
@@ -51,6 +87,8 @@
     font-size: 18px;
 }
 
+
+
 /* styling for how it works */
 
 .fc-img2 {
@@ -65,7 +103,7 @@
 
 
 
-.car-tit {
+.card-title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 19px;
 }
