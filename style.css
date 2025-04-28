@@ -11,7 +11,7 @@ header a {
 }
 
 header span {
-    color: white;
+    color: black;
 }
 
 header img {
@@ -64,8 +64,8 @@ header img {
 }
 
 .btn-hero-custom2 {
-    background-color: #8C92AC !important; /* !important overides the color in the primary button whilst keeping its other features. */
-    border-color: #8C92AC !important; 
+    background-color: #5a74e8 !important; /* !important overides the color in the primary button whilst keeping its other features. */
+    border-color: #3f59c7 !important; 
     color: #fff !important;
     transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease 
 }
