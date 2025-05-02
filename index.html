@@ -23,9 +23,9 @@
     </a>
 
     <ul class="nav nav-pills fw-bold fs-5">
-      <li class="nav-item"><a href="#" class="nav-link text-dark" aria-current="page">Sign up</a></li>
+      <li class="nav-item"><a href="#signup-btns" class="nav-link text-dark" aria-current="page">Sign up</a></li>
       <li class="nav-item"><a href="#featured-3" class="nav-link text-dark">Offers</a></li>
-      <li class="nav-item"><a href="#" class="nav-link text-dark">FAQs</a></li>
+      <li class="nav-item"><a href="#faqs" class="nav-link text-dark">FAQs</a></li>
       <li class="nav-item"><a href="#myCarousel" class="nav-link text-dark">About</a></li>
     </ul>
   </header>
@@ -44,7 +44,7 @@
           <p class="lead">
             We offer free workshops and mentoring to help adults use technology with ease.
           </p>
-          <div class="herogrid d-grid gap-3 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <div class="herogrid d-grid gap-3 d-md-flex justify-content-md-start mb-4 mb-lg-3" id="signup-btns">
             <button type="button" class="btn btn-lg px-4 me-md-2 fw-bold btn-primary btn-hero-custom1">
               <a href="Learnsignup-form.html" target="_blank" class="text-decoration-none text-dark">
                 I want to learn
@@ -181,7 +181,7 @@
     <div class="row g-3 py-5 row-cols-1 row-cols-lg-3">
       <!-- Card 1 -->
       <div class="feature col">
-        <div class="card" style="width: 23rem;">
+        <div class="card" style="width: 21rem;">
           <img src="./Assests/Digital class.jpg" class="bootcamp-img" alt="Digital skills">
           <div class="card-body">
             <h5 class="card-title">
@@ -198,8 +198,6 @@
           </div>
           <div class="card-body">
             <a href="#" class="card-link">
-              Learn more</a>
-            <a href="#" class="card-link">
               Book now</a>
           </div>
         </div>
@@ -208,7 +206,7 @@
 
       <!-- Card 2 -->
       <div class="feature col">
-        <div class="card" style="width: 23rem;">
+        <div class="card" style="width: 21rem;">
           <img src="./Assests/Adult man learning.webp" class="coach-img" alt="1-to-1 coaching">
           <div class="card-body">
             <h5 class="card-title">1-to-1 or small Group Coaching</h5>
@@ -222,7 +220,6 @@
               more capable and empowered at work</p>
           </div>
           <div class="card-body">
-            <a href="#" class="card-link">Learn more</a>
             <a href="#" class="card-link">Book now</a>
           </div>
         </div>
@@ -230,15 +227,19 @@
 
       <!-- Card 3 -->
       <div class="feature col">
-        <div class="card" style="width: 23rem;">
+        <div class="card" style="width: 21rem;">
           <img src="./Assests/training.jpg" class="coach-img" alt="1-to-1 coaching">
           <div class="card-body">
             <h5 class="card-title">Workplace Digital Productivity Workshops</h5>
-            <p class="card-text">Delivered in partnership with SMEs, charities, or local authorities to help
-              train staff or community members in basic digital tools and processes</p>
+            <p class="card-text">
+              We collaborate with local organizations, charities, and small businesses to deliver accessible workshops that teach
+              essential digital tools and processes. Designed for staff, volunteers, and community members, sessions focus on
+              real-world skills such as using productivity software, managing digital communication, and working collaboratively
+              online. Each workshop is hands-on, adaptable to varying skill levels, and aimed at boosting digital confidence,
+              workplace readiness, and everyday efficiency.
+            </p>
           </div>
-          <div class="card-body">
-            <a href="#" class="card-link">Learn more</a>
+          <div class="card-body ">
             <a href="#" class="card-link">Book now</a>
           </div>
         </div>
@@ -288,9 +289,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
+          <div class="col-md-4 mb-5">
+            <img src="./Assests/Tch p logo.jpg" alt="" height="280px" width="420px">
+          </div>
           <h4>Contact Us</h4>
           <p>We'd love to hear from you!</p>
-          <form>
+          <form netlify>
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
               <input type="text" class="form-control" id="name" placeholder="Your Name">
@@ -312,16 +316,18 @@
             <p>Contact form not working? no worries, you can send us an email directly by clicking on the mail below.
             </p>
             <a href="mailto:info@techconfidencehub.com" class="text-decoration-none text-dark">
-              info@techconfidencehub.com
+              info@techconfidencehub.co.uk
             </a>
           </form>
+
           <!-- FAQs page-->
-          <div class="mt-4">
+          <div class="mt-5" id="faqs">
             <h4>FAQs</h4>
             <div class="row gx-5">
               <!-- Learners FAQ -->
               <div class="col-12 col-md-6 mb-4">
                 <h5>For Learners</h5>
+                <br>
                 <div class="d-flex flex-column gap-3">
                   <details>
                     Anyone aged 18 or above who wants to improve their digital skills is welcome — especially those in
@@ -380,6 +386,7 @@
               <!-- Volunteers FAQ -->
               <div class="col-12 col-md-6 mb-4">
                 <h5>For Volunteers</h5>
+                <br>
                 <div class="d-flex flex-column gap-3">
                   <details>
                     <summary>Who can volunteer as a tutor?</summary>
