@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <form class="container mt-5" netlify>
+  <form class="container mt-5" action="https://formsubmit.co/irejoseph16@gmail.com" method="POST">
     <div class="border rounded p-4 shadow-sm bg-white">
       <h4 class="text-center mb-4"> Get ready to level up your skills—join us as a learner!</h4>
       <br>
@@ -20,26 +20,26 @@
       <div class="row mb-3">
         <div class="col-md-6">
           <label for="Name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="Name" placeholder="John Doe/ Josh">
+          <input type="text" name="Name" class="form-control" id="Name" placeholder="John Doe/ Josh">
         </div>
       </div>
       <div class="row mb-3">
         <div class="col-md-6">
           <label for="email" class="form-label">Email Address</label>
-          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <input type="email" name="Email" class="form-control" id="email" placeholder="you@example.com">
         </div>
       </div>
       <div class="mb-3">
         <div class="col-md-6">
           <label for="phone" class="form-label">Phone Number</label>
-          <input type="tel" class="form-control" id="phone" placeholder="(+44) 12 3456 7890">
+          <input type="tel" name="Phone" class="form-control" id="phone" placeholder="(+44) 12 3456 7890">
         </div>
 
       </div>
       <div class="row mb-3">
         <div class="col-md-6">
           <label for="ageRange" class="form-label">Select your age range</label>
-          <select class="form-select" id="ageRange">
+          <select name="Age" class="form-select" id="ageRange">
             <option selected disabled>Choose an option</option>
             <option value="25-34">25 - 34</option>
             <option value="35-44">35 - 44</option>
@@ -55,23 +55,23 @@
       <h5>Preferred session times (select all that apply)</h5>
       <ul class="list-unstyled">
         <li>
-          <input type="checkbox" id="check1" value="check1" class="form-check-input me-2">
+          <input type="checkbox" name="selectedPreference" id="check1" value="check1" class="form-check-input me-2">
           <label for="check1">Weekdays</label>
         </li>
         <li>
-          <input type="checkbox" id="check2" value="check2" class="form-check-input me-2">
+          <input type="checkbox" name="selectedPreference" id="check2" value="check2" class="form-check-input me-2">
           <label for="check2">Weekends</label>
         </li>
         <li>
-          <input type="checkbox" id="check3" value="check3" class="form-check-input me-2">
+          <input type="checkbox" name="selectedPreference" id="check3" value="check3" class="form-check-input me-2">
           <label for="check3">Mornings</label>
         </li>
         <li>
-          <input type="checkbox" id="check4" value="check4" class="form-check-input me-2">
+          <input type="checkbox" name="selectedPreference" id="check4" value="check4" class="form-check-input me-2">
           <label for="check4">Afternoons</label>
         </li>
         <li>
-          <input type="checkbox" id="check5" value="check5" class="form-check-input me-2">
+          <input type="checkbox" name="selectedPreference" id="check5" value="check5" class="form-check-input me-2">
           <label for="check5">Evenings</label>
         </li>
       </ul>
@@ -79,12 +79,12 @@
         <label for="learningGoal" class="form-label">
           Do you have a preferred tutor gender or communication style? (optional):
         </label>
-        <textarea class="form-control" id="prefcommstyle" rows="3"></textarea>
+        <textarea name="learningPref" class="form-control" id="prefcommstyle" rows="3"></textarea>
       </div>
       <br>
       <div class="col-md-6">
         <label for="learningGoal" class="form-label">What would you like to learn or improve on?</label>
-        <textarea class="form-control" id="learningGoal" rows="3"></textarea>
+        <textarea name="learningGoal" class="form-control" id="learningGoal" rows="3"></textarea>
       </div>
       <br>
 
@@ -93,7 +93,7 @@
       <div class="mb-3 row align-items-center">
         <label class="col-md-6 col-form-label">Using a computer or smartphone</label>
         <div class="col-md-3">
-          <select class="form-select" name="confidence_device">
+          <select name="usingComp" class="form-select" name="confidence_device">
             <option disabled selected>0</option>
             <option>1</option>
             <option>2</option>
@@ -107,7 +107,7 @@
       <div class="mb-3 row align-items-center">
         <label class="col-md-6 col-form-label">Sending emails</label>
         <div class="col-md-3">
-          <select class="form-select" name="confidence_email">
+          <select name="sendEmails" class="form-select" name="confidence_email">
             <option disabled selected>0</option>
             <option>1</option>
             <option>2</option>
@@ -121,7 +121,7 @@
       <div class="mb-3 row align-items-center">
         <label class="col-md-6 col-form-label">Using Microsoft Word or Excel</label>
         <div class="col-md-3">
-          <select class="form-select" name="confidence_office">
+          <select name="microsoft" class="form-select" name="confidence_office">
             <option disabled selected>0</option>
             <option>1</option>
             <option>2</option>
@@ -135,7 +135,7 @@
       <div class="mb-3 row align-items-center">
         <label class="col-md-6 col-form-label">Attending online video calls (Zoom/Teams)</label>
         <div class="col-md-3">
-          <select class="form-select" name="confidence_calls">
+          <select name="zoom" class="form-select" name="confidence_calls">
             <option disabled selected>0</option>
             <option>1</option>
             <option>2</option>
@@ -149,7 +149,7 @@
       <div class="mb-3 row align-items-center">
         <label class="col-md-6 col-form-label">Completing online forms or job applications</label>
         <div class="col-md-3">
-          <select class="form-select" name="confidence_forms">
+          <select name="onlineForms" class="form-select" name="confidence_forms">
             <option disabled selected>0</option>
             <option>1</option>
             <option>2</option>
@@ -169,11 +169,11 @@
         </label>
         <ul class="list-unstyled">
           <li>
-            <input type="checkbox" id="checkY" value="checkY" class="form-check-input me-2">
+            <input name="support" type="checkbox" id="checkY" value="checkY" class="form-check-input me-2">
             <label for="checkY">Yes</label>
           </li>
           <li>
-            <input type="checkbox" id="checkN" value="checkN" class="form-check-input me-2">
+            <input name="support" type="checkbox" id="checkN" value="checkN" class="form-check-input me-2">
             <label for="checkN">No</label>
           </li>
         </ul>
@@ -182,33 +182,33 @@
           <label for="supportNeeds" class="form-label">
             If yes, please specify your needs or adjustments:
           </label>
-          <textarea class="form-control" id="prefcommstyle" rows="3"></textarea>
+          <textarea name="supportDetails" class="form-control" id="prefcommstyle" rows="3"></textarea>
         </div>
         <br>
         <h5>Are you currently supported by any of the following? (select all that apply)</h5>
         <ul class="list-unstyled">
           <li>
-            <input type="checkbox" id="check6" value="check6" class="form-check-input me-2">
+            <input name="ongoingsupp" type="checkbox" id="check6" value="check6" class="form-check-input me-2">
             <label for="check6">Social Services</label>
           </li>
           <li>
-            <input type="checkbox" id="check7" value="check7" class="form-check-input me-2">
+            <input name="ongoingsupp" type="checkbox" id="check7" value="check7" class="form-check-input me-2">
             <label for="check7">Job Centre / Employment Coach</label>
           </li>
           <li>
-            <input type="checkbox" id="check8" value="check8" class="form-check-input me-2">
+            <input name="ongoingsupp" type="checkbox" id="check8" value="check8" class="form-check-input me-2">
             <label for="check8">Carer / Support Worker</label>
           </li>
           <li>
-            <input type="checkbox" id="check9" value="check9" class="form-check-input me-2">
+            <input name="ongoingsupp" type="checkbox" id="check9" value="check9" class="form-check-input me-2">
             <label for="check9">Adult Learning Centre</label>
           </li>
           <li>
-            <input type="checkbox" id="check10" value="check10" class="form-check-input me-2">
+            <input name="ongoingsupp" type="checkbox" id="check10" value="check10" class="form-check-input me-2">
             <label for="check10">None of the above</label>
           </li>
           <li>
-            <input type="checkbox" id="check11" value="check11" class="form-check-input me-2">
+            <input name="ongoingsupp" type="checkbox" id="check11" value="check11" class="form-check-input me-2">
             <label for="check11">Prefer not to say</label>
           </li>
         </ul>
@@ -217,13 +217,13 @@
           <label for="supportadj" class="form-label">
             Is there anything else you'd like us to know to make your learning experience better or safer?
           </label>
-          <textarea class="form-control" id="supportadj" rows="3"></textarea>
+          <textarea name="finalsupp" class="form-control" id="supportadj" rows="3"></textarea>
         </div>
       </div>
       <br>
 
       <!--Data policy, safeguard and submit button-->
-      <input type="checkbox" id="privacypol" value="privacypol" class="form-check-input me-2" required>
+      <input type="checkbox" name="consent" id="privacypol" value="privacypol" class="form-check-input me-2" required>
       <label for="privacypol">
         I agree to the
         <a href="/Assests/Privacy & safeguard policies.pdf" target="_blank" class="text-decoration-none text-blue">
