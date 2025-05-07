@@ -2,7 +2,7 @@
 /* Header related styling */
 
 header {
-    background-color: #ADEBB3;
+    background-color: #2d4dff;
 }
 
 header a {
@@ -11,12 +11,14 @@ header a {
 }
 
 header span {
-    color: black;
+    color: white;
+    margin-top: 15px;
 }
 
 header img {
     border-radius: 7px;
-    margin-right: 20px;
+    margin-right: 7px;
+    margin-left: 15px;
 }
 
 .nav {
@@ -50,29 +52,29 @@ header img {
 }
 
 .btn-hero-custom1 {
-    background-color: #98FB98 !important; /* !important overides the color in the primary button whilst keeping its other features. */
-    border-color: #98FB98 !important; 
+    background-color: #2d4dff !important; /* !important overides the color in the primary button whilst keeping its other features. */
+    border-color: #2d4dff !important; 
     color: #000 !important;
     transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-hero-custom1:hover {
-    background-color: #3af83a !important; /* !important overides the color in the primary button whilst keeping its other features. */
-    border-color: #3af83a !important; 
+    background-color: #7b95fa !important; /* !important overides the color in the primary button whilst keeping its other features. */
+    border-color: #7b95fa !important; 
     color: #000 !important;
     transform: scale(1.05); /* Scale up the button on hover */ 
 }
 
 .btn-hero-custom2 {
-    background-color: #5a74e8 !important; /* !important overides the color in the primary button whilst keeping its other features. */
-    border-color: #3f59c7 !important; 
+    background-color: #2d4dff !important; /* !important overides the color in the primary button whilst keeping its other features. */
+    border-color: #2d4dff !important; 
     color: #fff !important;
     transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease 
 }
 
 .btn-hero-custom2:hover {
-    background-color: #474c60 !important; /* !important overides the color in the primary button whilst keeping its other features. */
-    border-color: #474c60 !important; 
+    background-color: #7b95fa !important; /* !important overides the color in the primary button whilst keeping its other features. */
+    border-color: #7b95fa !important; 
     color: #fff !important;
     transform: scale(1.05); /* Scale up the button on hover */ 
 }
@@ -119,8 +121,8 @@ header img {
 /* Footer styling */
 
 footer {
-    background-color: #00F0FF;
-    color: black;
+    background-color: #2d4dff;
+    color: white;
     padding: 40px 0 0 0;
 }
 
