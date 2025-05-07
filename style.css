@@ -134,3 +134,8 @@ footer {
     margin: 30px 30px 0 30px;
     padding-top: 5px;
 }
+
+.footerlogo {
+    margin-left: 10px;
+    margin-top: 20px;
+}
