@@ -90,7 +90,7 @@ header img {
 .carousel-item img {
   object-fit: cover;
   width: 100%;
-  height: 50vh; /* default mobile */
+  height: 100vh; /* default tablet */
 }
 
 .car1p {
@@ -183,9 +183,6 @@ footer {
     width: 80%; /* Adjust the width as needed */
   }
 
-  .carousel-item img {
-    height: 100%; /* larger screens like laptops/desktops */
-  }
 }
 
 @media (max-width: 768px) {
