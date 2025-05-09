@@ -188,7 +188,6 @@ footer {
   .hero img {
     width: 80%; /* Adjust the width as needed */
   }
-
 }
 
 @media (max-width: 768px) {
@@ -261,6 +260,4 @@ footer {
   .carousel-item img {
     height: 30vh; /* medium screens like tablets */
   }
-
-  
 }
