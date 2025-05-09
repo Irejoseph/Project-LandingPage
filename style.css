@@ -35,6 +35,12 @@ header img {
   background-color: #2d4dff !important; /* Ensure the color is applied */
 }
 
+/* Remove borders around the navbar toggle button */
+.navbar-toggler {
+  border: none !important; /* Remove the border */
+  box-shadow: none !important; /* Remove any shadow */
+}
+
 /* Styling the hero */
 
 .heroh1 {
