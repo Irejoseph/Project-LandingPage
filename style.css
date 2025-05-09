@@ -32,7 +32,7 @@ header img {
 
 /* Custom header background color */
 .custom-header-bg {
-  background-color: #2d4dff; /* Replace with your desired color */
+  background-color: #2d4dff !important; /* Ensure the color is applied */
 }
 
 /* Styling the hero */
@@ -81,7 +81,16 @@ header img {
 }
 
 .carousel-item {
-  height: 75vh;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh; /* default mobile */
 }
 
 .car1p {
@@ -99,10 +108,24 @@ header img {
   display: block !important; /* Default Bootstrap behavior when toggled */
 }
 
+/* Ensure carousel <p> elements are visible */
+.carousel-caption p {
+  opacity: 1 !important; /* Ensure the text is fully visible */
+  display: block !important; /* Ensure the element is displayed */
+  color: #fff; /* Adjust text color for visibility */
+}
+
+/* Adjust carousel caption alignment */
+.carousel-caption {
+  bottom: 5%; /* Ensure consistent alignment for all captions */
+  transform: translateY(0); /* Reset any vertical offset */
+  padding: 1rem; /* Maintain padding for readability */
+}
+
 /* styling for how it works */
 
 .hiw-title {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .fc-img2 {
@@ -145,10 +168,31 @@ footer {
   margin-top: 20px;
 }
 
+#featured-2 {
+  margin-top: 1rem !important; /* Reduce the top margin */
+  margin-bottom: 0.5rem !important; /* Reduce the bottom margin */
+}
+
+#featured-3 {
+  margin-top: 1rem !important; /* Reduce the top margin */
+}
+
+/* Adjust hero image width for desktop view */
+@media (min-width: 992px) {
+  .hero img {
+    width: 80%; /* Adjust the width as needed */
+  }
+
+  .carousel-item img {
+    height: 100%; /* larger screens like laptops/desktops */
+  }
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: center;
+    width: 100%; /* Ensure the header spans the full width */
   }
 
   .hero .row {
@@ -176,18 +220,44 @@ footer {
   }
 
   #featured-2 {
-    margin-top: 2rem !important;
+    margin-top: 0.5rem !important; /* Further reduce margin for mobile view */
   }
 
   .carousel-caption {
+    bottom: 2%; /* Reduce bottom spacing for mobile */
+    padding: 0.5rem; /* Reduce padding for a compact look */
+    display: block !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6); /* Dark background for readability */
+    width: 75%;
     text-align: center;
+    border-radius: 10px;
   }
 
   .carousel-caption h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 0.25rem; /* Reduce space below the heading */
   }
 
   .carousel-caption p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #f0f0f0;
+    margin: 0; /* Remove any additional margin */
   }
+
+  .navbar {
+    width: 100%; /* Ensure the navbar spans the full width */
+  }
+
+  .carousel-item img {
+    height: 30vh; /* medium screens like tablets */
+  }
+
+  
 }
