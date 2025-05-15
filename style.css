@@ -203,7 +203,7 @@ footer {
   }
 
   .hero img {
-    width: 100%;
+    width: 80%; /* Adjust the width for mobile view */
     height: auto;
   }
 
