@@ -1,0 +1,263 @@
+/* Header related styling */
+
+header a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 20px;
+}
+
+header span {
+  color: white;
+  margin-top: 15px;
+}
+
+header img {
+  border-radius: 7px;
+  margin-right: 7px;
+  margin-left: 15px;
+}
+
+.nav {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 10px;
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+  transition: transform 0.3 ease;
+}
+
+.nav-link {
+  margin: 0;
+}
+
+/* Custom header background color */
+.custom-header-bg {
+  background-color: #2d4dff !important; /* Ensure the color is applied */
+}
+
+/* Remove borders around the navbar toggle button */
+.navbar-toggler {
+  border: none !important; /* Remove the border */
+  box-shadow: none !important; /* Remove any shadow */
+}
+
+/* Styling the hero */
+
+.heroh1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+}
+
+.herogrid {
+  margin-top: 10px;
+}
+
+.lead {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.btn-hero-custom1 {
+  background-color: #2d4dff !important; /* !important overides the color in the primary button whilst keeping its other features. */
+  border-color: #2d4dff !important;
+  color: #000 !important;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.btn-hero-custom1:hover {
+  background-color: #7b95fa !important; /* !important overides the color in the primary button whilst keeping its other features. */
+  border-color: #7b95fa !important;
+  color: #000 !important;
+  transform: scale(1.05); /* Scale up the button on hover */
+}
+
+.btn-hero-custom2 {
+  background-color: #2d4dff !important; /* !important overides the color in the primary button whilst keeping its other features. */
+  border-color: #2d4dff !important;
+  color: #fff !important;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.btn-hero-custom2:hover {
+  background-color: #7b95fa !important; /* !important overides the color in the primary button whilst keeping its other features. */
+  border-color: #7b95fa !important;
+  color: #fff !important;
+  transform: scale(1.05); /* Scale up the button on hover */
+}
+
+.carousel-item {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh; /* default tablet */
+}
+
+.car1p {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+  font-size: 18px;
+}
+
+/* Ensure no custom styles override Bootstrap's collapse behavior */
+.collapse {
+  display: none !important; /* Default Bootstrap behavior */
+}
+
+.collapse.show {
+  display: block !important; /* Default Bootstrap behavior when toggled */
+}
+
+/* Ensure carousel <p> elements are visible */
+.carousel-caption p {
+  opacity: 1 !important; /* Ensure the text is fully visible */
+  display: block !important; /* Ensure the element is displayed */
+  color: #fff; /* Adjust text color for visibility */
+}
+
+/* Adjust carousel caption alignment */
+.carousel-caption {
+  bottom: 5%; /* Ensure consistent alignment for all captions */
+  transform: translateY(0); /* Reset any vertical offset */
+  padding: 1rem; /* Maintain padding for readability */
+}
+
+/* styling for how it works */
+
+.hiw-title {
+  margin-top: 10px;
+}
+
+.fc-img2 {
+  align-items: center;
+  margin-left: 25px;
+  border-radius: 3px;
+}
+
+.fc-img3 {
+  margin-left: 25px;
+  border-radius: 3px;
+}
+
+/* Offers styling */
+
+.card-title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-bottom: 19px;
+}
+
+/* Footer styling */
+
+footer {
+  background-color: #2d4dff;
+  color: white;
+  padding: 40px 0 0 0;
+}
+
+.foot-top {
+  margin-left: 50px;
+}
+
+.foot-bot {
+  margin: 30px 30px 0 30px;
+  padding-top: 5px;
+}
+
+.footerlogo {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+#featured-2 {
+  margin-top: 1rem !important; /* Reduce the top margin */
+  margin-bottom: 0.5rem !important; /* Reduce the bottom margin */
+}
+
+#featured-3 {
+  margin-top: 1rem !important; /* Reduce the top margin */
+}
+
+/* Adjust hero image width for desktop view */
+@media (min-width: 992px) {
+  .hero img {
+    width: 80%; /* Adjust the width as needed */
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure the header spans the full width */
+  }
+
+  .hero .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 80%; /* Adjust the width for mobile view */
+    height: auto;
+  }
+
+  .feature img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .footerlogo img {
+    width: 100%;
+    height: auto;
+  }
+
+  #featured-2 {
+    margin-top: 0.5rem !important; /* Further reduce margin for mobile view */
+  }
+
+  .carousel-caption {
+    bottom: 2%; /* Reduce bottom spacing for mobile */
+    padding: 0.5rem; /* Reduce padding for a compact look */
+    display: block !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6); /* Dark background for readability */
+    width: 75%;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 0.25rem; /* Reduce space below the heading */
+  }
+
+  .carousel-caption p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #f0f0f0;
+    margin: 0; /* Remove any additional margin */
+  }
+
+  .navbar {
+    width: 100%; /* Ensure the navbar spans the full width */
+  }
+
+  .carousel-item img {
+    height: 30vh; /* medium screens like tablets */
+  }
+}
