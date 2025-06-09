@@ -1,0 +1,175 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fff; /* set page background to white */
+}
+
+.showcase-background {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("background.jpg") center/cover no-repeat;
+  background-color: #fff; /* set fallback color to white */
+  display: flex;
+  align-items: stretch; /* changed from center */
+  justify-content: center;
+}
+
+.showcase-container {
+  background: #fff; /* changed from rgba(255,255,255,0.95) */
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
+  padding: 2rem 2.5rem;
+  max-width: 900px;
+  width: 95%;
+  margin: 3vh auto 3vh auto; /* add top/bottom margin for breathing room */
+  display: flex;
+  flex-direction: column;
+  min-height: 94vh; /* fill most of the viewport */
+  justify-content: flex-start;
+}
+
+.showcase-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.showcase-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.showcase-header p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.showcase-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.art-item {
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  padding: 1.2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.art-item img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.art-item h2 {
+  margin: 0.5rem 0 0.3rem 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.art-item p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  background: #2d7ff9;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(45, 127, 249, 0.12);
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+  background: #155ab6;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0 1.2rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 1.5rem;
+  background: transparent;
+  border-radius: 0;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d7ff9;
+  letter-spacing: 1px;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: color 0.2s, background 0.2s;
+  padding: 0.3em 0.7em;
+  border-radius: 4px;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  background: #e8f0fe;
+  color: #155ab6;
+}
+
+/* Responsive adjustments for header */
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 0 1rem 0;
+    margin-bottom: 1rem;
+  }
+  .navbar {
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  .brand {
+    font-size: 1.1rem;
+  }
+  .showcase-container {
+    padding: 1rem 0.5rem;
+    min-height: unset;
+    margin: 1vh auto 1vh auto;
+  }
+  .showcase-header h1 {
+    font-size: 1.5rem;
+  }
+  .showcase-gallery {
+    gap: 1rem;
+  }
+}

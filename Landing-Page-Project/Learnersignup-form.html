@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learners Signup form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <form class="container mt-5" action="https://formsubmit.co/26f81ca0697f77bd6ed4b171bb6d4e0e" method="POST">
+    <div class="border rounded p-4 shadow-sm bg-white">
+      <h4 class="text-center mb-4"> Get ready to level up your skills—join us as a learner!</h4>
+      <br>
+
+      <!-- Personal details -->
+      <h5> Personal Information</h5>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="Name" class="form-label">Name</label>
+          <input type="text" name="full_name" class="form-control" id="Name" placeholder="John Doe/ Josh">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" name="email_address" class="form-control" id="email" placeholder="you@example.com">
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" name="phone_number" class="form-control" id="phone" placeholder="(+44) 12 3456 7890">
+        </div>
+
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="ageRange" class="form-label">Select your age range</label>
+          <select name="age_range" class="form-select" id="ageRange">
+            <option selected disabled>Choose an option</option>
+            <option value="18-24">18 - 24</option>
+            <option value="25-34">25 - 34</option>
+            <option value="35-44">35 - 44</option>
+            <option value="45-54">45 - 54</option>
+            <option value="55-64">55 - 64</option>
+            <option value="65+">65 and over</option>
+          </select>
+        </div>
+      </div>
+      <br>
+
+      <!-- Learning Preferences-->
+      <h5>Learning Preferences (select all that apply)</h5>
+      <br>
+      <h5>Avalaibility</h5>
+      <ul class="list-unstyled">
+        <h6>Sessions</h6>
+        <li>
+          <input type="checkbox" name="preferred_session[]" id="check1" value="Weekdays" class="form-check-input me-2">
+          <label for="check1">Weekdays</label>
+        </li>
+        <li>
+          <input type="checkbox" name="preferred_session[]" id="check2" value="Weekends" class="form-check-input me-2">
+          <label for="check2">Weekends</label>
+        </li>
+        <br>
+        <h6>TIme</h6>
+        <li>
+          <input type="checkbox" name="preferred_session[]" id="check3" value="Mornings" class="form-check-input me-2">
+          <label for="check3">Mornings</label>
+        </li>
+        <li>
+          <input type="checkbox" name="preferred_session[]" id="check4" value="Afternoons"
+            class="form-check-input me-2">
+          <label for="check4">Afternoons</label>
+        </li>
+        <li>
+          <input type="checkbox" name="preferred_session[]" id="check5" value="Evenings" class="form-check-input me-2">
+          <label for="check5">Evenings</label>
+        </li>
+      </ul>
+      <div class="col-md-6">
+        <label for="learningGoal" class="form-label">
+          Do you have a preferred tutor gender or communication style? (optional):
+        </label>
+        <textarea name="preferred_communication_style" class="form-control" id="prefcommstyle" rows="3"></textarea>
+      </div>
+      <br>
+      <div class="col-md-6">
+        <label for="learningGoal" class="form-label">What would you like to learn or improve on?</label>
+        <textarea name="learning_goal" class="form-control" id="learningGoal" rows="3"></textarea>
+      </div>
+      <br>
+
+      <h5 class="mt-4">Digital Confidence Self-Assessment</h5>
+      <p class="text-muted mb-3">(1 = Not confident | 5 = Very confident)</p>
+      <div class="mb-3 row align-items-center">
+        <label class="col-md-6 col-form-label">Using a computer or smartphone</label>
+        <div class="col-md-3">
+          <select name="confidence_device" class="form-select">
+            <option disabled selected>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-3 row align-items-center">
+        <label class="col-md-6 col-form-label">Sending emails</label>
+        <div class="col-md-3">
+          <select name="confidence_email" class="form-select">
+            <option disabled selected>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-3 row align-items-center">
+        <label class="col-md-6 col-form-label">Using Microsoft Word or Excel</label>
+        <div class="col-md-3">
+          <select name="confidence_office" class="form-select">
+            <option disabled selected>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-3 row align-items-center">
+        <label class="col-md-6 col-form-label">Attending online video calls (Zoom/Teams)</label>
+        <div class="col-md-3">
+          <select name="confidence_calls" class="form-select">
+            <option disabled selected>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-3 row align-items-center">
+        <label class="col-md-6 col-form-label">Completing online forms or job applications</label>
+        <div class="col-md-3">
+          <select name="confidence_forms" class="form-select">
+            <option disabled selected>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+      <br>
+
+      <!-- Support and safeguarding-->
+      <div class="mb-3">
+        <h5> Support & Safeguarding </h5>
+        <label for="support" class="form-label">
+          Do you require any additional support or adjustments to participate in online sessions?
+        </label>
+        <ul class="list-unstyled">
+          <li>
+            <input name="additional_support" type="checkbox" id="checkY" value="Yes" class="form-check-input me-2">
+            <label for="checkY">Yes</label>
+          </li>
+          <li>
+            <input name="additional_support" type="checkbox" id="checkN" value="No" class="form-check-input me-2">
+            <label for="checkN">No</label>
+          </li>
+        </ul>
+        <br>
+        <div class="col-md-6">
+          <label for="supportNeeds" class="form-label">
+            If yes, please specify your needs or adjustments:
+          </label>
+          <textarea name="support_details" class="form-control" id="prefcommstyle" rows="3"></textarea>
+        </div>
+        <br>
+        <h5>Are you currently supported by any of the following? (select all that apply)</h5>
+        <ul class="list-unstyled">
+          <li>
+            <input name="ongoing_support[]" type="checkbox" id="check6" value="Social Services"
+              class="form-check-input me-2">
+            <label for="check6">Social Services</label>
+          </li>
+          <li>
+            <input name="ongoing_support[]" type="checkbox" id="check7" value="Job Centre / Employment Coach"
+              class="form-check-input me-2">
+            <label for="check7">Job Centre / Employment Coach</label>
+          </li>
+          <li>
+            <input name="ongoing_support[]" type="checkbox" id="check8" value="Carer / Support Worker"
+              class="form-check-input me-2">
+            <label for="check8">Carer / Support Worker</label>
+          </li>
+          <li>
+            <input name="ongoing_support[]" type="checkbox" id="check9" value="Adult Learning Centre"
+              class="form-check-input me-2">
+            <label for="check9">Adult Learning Centre</label>
+          </li>
+          <li>
+            <input name="ongoing_support[]" type="checkbox" id="check10" value="None of the above"
+              class="form-check-input me-2">
+            <label for="check10">None of the above</label>
+          </li>
+          <li>
+            <input name="ongoing_support[]" type="checkbox" id="check11" value="Prefer not to say"
+              class="form-check-input me-2">
+            <label for="check11">Prefer not to say</label>
+          </li>
+        </ul>
+        <br>
+        <div class="col-md-6">
+          <label for="supportadj" class="form-label">
+            Is there anything else you'd like us to know to make your learning experience better or safer?
+          </label>
+          <textarea name="additional_notes" class="form-control" id="supportadj" rows="3"></textarea>
+        </div>
+      </div>
+      <br>
+
+      <!--Data policy, safeguard and submit button-->
+      <input type="checkbox" name="privacy_consent" id="privacypol" value="agreed" class="form-check-input me-2"
+        required>
+      <label for="privacypolicy">
+        I agree to the
+        <a href="/Assests/Privacy & safeguard policies.pdf" target="_blank" class="text-decoration-none text-blue">
+          <b>Privacy and Safeguarding</b>
+        </a>
+      </label>
+      <br>
+      <button type="submit" class="btn btn-primary mt-3">
+        Submit
+      </button>
+    </div>
+  </form>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
+```
