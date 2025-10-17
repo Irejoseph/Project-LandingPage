@@ -23,7 +23,7 @@ header img {
 
 .nav-item:hover {
   transform: scale(1.2);
-  transition: transform 0.3 ease;
+  transition: transform 0.3s ease;
 }
 
 .nav-link {
@@ -260,4 +260,9 @@ footer {
   .carousel-item img {
     height: 30vh; /* medium screens like tablets */
   }
+}
+
+.custom-text-success {
+  --bs-text-opacity: 1;
+  color: rgb(5 211 116) !important;
 }
