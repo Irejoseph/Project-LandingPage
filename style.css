@@ -278,3 +278,85 @@ footer {
   text-decoration: underline;
   outline: none;
 }
+
+/* Small UI refinements */
+.btn-hero-custom1 {
+  color: #fff !important;
+}
+
+.btn-hero-custom2 {
+  background: #fff !important;
+  border-color: #2d4dff !important;
+  color: #2d4dff !important;
+}
+
+.btn-hero-custom2:hover {
+  background: #eef1ff !important;
+  border-color: #7b95fa !important;
+  color: #2d4dff !important;
+}
+
+.carousel-caption {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.28));
+  border-radius: 0.75rem;
+  max-width: 720px;
+  padding: 1.25rem;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 12%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-size: 55%;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+#featured-2 .feature img {
+  aspect-ratio: 4 / 3;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+#featured-3 .card-img-top {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+footer .row > div {
+  margin-bottom: 2rem;
+}
+
+footer #faqs {
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  margin-top: 2.5rem !important;
+  padding-top: 2rem;
+}
+
+footer details {
+  padding: 0.65rem 0;
+}
+
+footer summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #ffd54a;
+  outline-offset: 3px;
+}
